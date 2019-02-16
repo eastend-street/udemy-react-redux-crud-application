@@ -9,12 +9,15 @@ const App = () => {
     {
       name: "Hanako",
       age: 5
+    },
+    {
+      name: "NoName"
     }
   ];
   return (
     <div>
-      {profiles.map((profile) => {
-        return <User name={profile.name} age={profile.age} />;
+      {profiles.map((profile, index) => {
+        return <User name={profile.name} age={profile.age} key={index} />;
       })}
     </div>
   );
@@ -27,5 +30,9 @@ const User = props => {
     </div>
   );
 };
+
+User.defaultProps = {
+  age : 1
+}
 
 export default App;
