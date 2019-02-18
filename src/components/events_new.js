@@ -7,7 +7,7 @@ class EventsNew extends Component {
   render() {
     return (
       <React.Fragment>
-        <div>foo</div>
+        <div>bar</div>
       </React.Fragment>
     );
   }
