@@ -37,17 +37,17 @@ class EventsIndex extends Component {
       position: "fixed",
       right: 12,
       bottom: 12
-    }
+    };
     return (
       <React.Fragment>
-        <FloatingActionButton style={style} containerElement={<Link to="/events/new" />}>
+        <FloatingActionButton
+          style={style}
+          containerElement={<Link to="/events/new" />}
+        >
           <ContentAdd />
         </FloatingActionButton>
         <Table>
-          <TableHeader
-            displaySelectAll={false}
-            adjustForCheckbox={false}
-          >
+          <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
             <TableRow>
               <TableHeaderColumn>ID</TableHeaderColumn>
               <TableHeaderColumn>Title</TableHeaderColumn>
