@@ -1,5 +1,4 @@
 import axios from "axios";
-import { Action } from "rxjs/internal/scheduler/Action";
 
 export const READ_EVENTS = "READ_EVENTS";
 export const READ_EVENT = "READ_EVENT";
